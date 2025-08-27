@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> assignment-5 </title>
+        <!-- css link here  -->
+         <link rel="stylesheet" href="styles/style.css">
+        <!-- tailwind css link here  -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- daisy ui link here  -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <!-- font awesome link here  -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+</head>
+<body class="inter-font">
+
+    <nav class="w-11/12 mx-auto flex justify-between py-4">
+        <div class="flex items-center relative">   
+           <figure>  
+            <img class="w-[30px]" src="assets/logo.png" alt="">
+           </figure>
+            <h1 class="ms-2 text-lg font-bold leading-5 text-[#006747]"> Emergency <br> service </h1>
+        </div>
+
+        <input type="checkbox" name="" id="menu-toggle" class="hidden peer">
+        <label class="block sm:hidden cursor-pointer" for="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+       
+
+        <div class=" flex-col sm:flex-row hidden peer-checked:flex sm:flex sm:static items-end gap-3 bg-white sm:bg-transparent p-5 sm:p-0 rounded-lg  absolute top-16 left-0 w-full sm:w-auto  z-10 ">
+            <div class="bg-[#ECFFF0] flex items-center px-5 py-2 rounded-3xl mr-3">
+                <span class="font-bold"> 0 </span>
+                <figure>
+                    <img class="w-[24px] ml-2" src="assets/heart.png" alt="" srcset="">
+                </figure>
+            </div>
+            <div class="bg-[#ECFFF0]  flex items-center py-2 px-4 rounded-3xl">
+                <span class="font-bold"> 100 </span>
+               <figure>
+                 <img class="w-[24px] ml-2" src="assets/coin.png" alt="">
+               </figure>
+            </div>
+            <div>
+                <button class="bg-[#00A63E]  rounded-3xl py-2 px-6 ml-3  text-white"> <span>2</span> Copy </button>
+            </div>
+        </div>
+
+    </nav>
+    
+  
+    
+
+    
+</body>
+</html>
