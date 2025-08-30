@@ -35,9 +35,9 @@
       const alertMessage = `📞 Calling ${names[index].innerText} ${numbers[index].innerText}...`;
      alert(alertMessage);
       coin -= 20
-      coinBtn.innerText = coin
+      coinBtn.innerText = coin;
 
-      const now = new Date().toLocaleTimeString()
+      const now = new Date().toLocaleTimeString();
       const addDiv = document.createElement('div');
       addDiv.innerHTML = `
       <div class="flex justify-between items-center bg-[#FAFAFA] p-2 m-3 rounded-lg">
@@ -60,14 +60,14 @@ document.getElementById('clear-button').addEventListener('click',function(){
 //   copy button 
 
 const copyCount = document.getElementById('copy-count');
-const copyBtns = document.getElementsByClassName('copy-btn')
-let counter = 0
+const copyBtns = document.getElementsByClassName('copy-btn');
+let counter = 0;
   for(const copyBtn of copyBtns){
     const index = Array.from(copyBtns).indexOf(copyBtn);
   copyBtn.addEventListener('click', function(){
    counter++
    copyCount.innerText = counter
-   alert(`❌ ${names[index].innerText}, ${numbers[index].innerText}`);
+   alert(`Number copied ${numbers[index].innerText}`);
 
    const link =document.createElement('a');
    link.href = 'https://example.com';
