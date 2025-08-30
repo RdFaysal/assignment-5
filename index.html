@@ -15,7 +15,7 @@
        
 </head>
 <body class="inter-font">
-
+         <!-- nav section here  -->
     <nav class="w-11/12 mx-auto flex justify-between py-4">
         <div class="flex items-center relative">   
            <figure>  
@@ -29,8 +29,6 @@
           <i class="fa-solid fa-bars"></i>
         </label>
 
-       
-
         <div class=" flex-col sm:flex-row hidden peer-checked:flex sm:flex sm:static items-end gap-3 bg-white sm:bg-transparent p-5 sm:p-0 rounded-lg  absolute top-16 left-0 w-full sm:w-auto  z-10 ">
             <div class="bg-[#ECFFF0] flex items-center px-5 py-2 rounded-3xl mr-3">
                 <span id="heart-counter" class="font-bold"> 0 </span>
@@ -39,24 +37,25 @@
                 </figure>
             </div>
             <div class="bg-[#ECFFF0]  flex items-center py-2 px-4 rounded-3xl">
-                <span class="font-bold"> 100 </span>
+                <span id="coin-button" class="font-bold"> 100 </span>
                <figure>
                  <img class="w-[24px] ml-2" src="assets/coin.png" alt="">
                </figure>
             </div>
             <div>
-                <button class="bg-[#00A63E] hover:bg-gray-300 cursor-pointer  rounded-3xl py-2 px-6 ml-3  text-white"> <span>2</span> Copy </button>
+                <button class="bg-[#00A63E] hover:bg-gray-300 cursor-pointer  rounded-3xl py-2 px-6 ml-3  text-white"> <span id="copy-count">0</span> Copy </button>
             </div>
         </div>
 
     </nav>
-
+         <!-- banner section here  -->
       <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013443] text-white text-center py-4">
          <img class="w-[80px] mx-auto text-white text-opacity-100" src="assets/logo-dark.png" alt="">
          <h1 class="text-3xl font-bold py-2"> Emergency Service Directory </h1>
          <p class="text-sm"> Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh </p>
     </div>
 
+    <!-- main section here  -->
     <main class="bg-[#F5FFF6]">
         <section class="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-12 gap-6 md:grid-rows-3 rounded-lg py-6">
             <div class="col-span-1 md:col-span-9 row-span-1 md:row-span-3">
@@ -66,15 +65,15 @@
                         <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                         <i class=" heart-btn far fa-heart cursor-pointer"></i>
                     </div>
-                    <h4 class="font-bold text-lg"> National Emergency Number </h4>
+                    <h4 class="name font-bold text-lg"> National Emergency Number </h4>
                     <p class="text-sm"> National Emergency </p>
                    <div class="mt-4">
-                      <p class="font-bold text-xl"> 999 </p>
+                      <p class="number font-bold text-xl"> 999 </p>
                       <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> All </button>
                     </div>
                     <div class=" flex">
-                        <button  class="btn hover:bg-black hover:text-white  cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                        <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                        <button  class="copy-btn btn hover:bg-black hover:text-white  cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                        <button class=" call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                     </div>
                   </div>
 
@@ -83,15 +82,15 @@
                       <img class="w-[45px] p-3 bg-[#DFEFFF] rounded-xl mb-3" src="assets/police.png" alt="">
                       <i class="heart-btn far fa-heart cursor-pointer"></i>
                    </div>
-                   <h4 class="font-bold text-lg"> Police Helpline Number </h4>
+                   <h4 class="name font-bold text-lg"> Police Helpline Number </h4>
                    <p class="text-sm"> Police </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 999 </p>
+                     <p class="number font-bold text-xl"> 999 </p>
                     <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Police </button>
                   </div>
                   <div class=" flex">
-                     <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                     <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2  w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                     <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                     <button class=" call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2  w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                  </div>
                 </div>
 
@@ -100,15 +99,15 @@
                      <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/fire-service.png" alt="">                              
                     <i class=" heart-btn far fa-heart cursor-pointer"></i>
                   </div>
-                    <h4 class="font-bold text-lg"> Fire Service Number </h4>
+                    <h4 class="name font-bold text-lg"> Fire Service Number </h4>
                     <p class="text-sm"> Fire Service </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 999 </p>
+                     <p class="number font-bold text-xl"> 999 </p>
                     <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Fire </button>
                   </div>
                   <div class=" flex">
-                     <button  class="btn text-gray-300 hover:bg-black cursor-pointer  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                     <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                     <button  class="copy-btn btn text-gray-300 hover:bg-black cursor-pointer  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                     <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                    </div>
                 </div>
 
@@ -117,15 +116,15 @@
                      <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/ambulance.png" alt="">
                      <i class=" heart-btn far fa-heart cursor-pointer"></i>
                    </div>
-                   <h4 class="font-bold text-lg"> Ambulance Service </h4>
+                   <h4 class="name font-bold text-lg"> Ambulance Service </h4>
                    <p class="text-sm"> Ambulance </p>
                   <div class="mt-4">
-                    <p class="font-bold text-xl"> 1994-999999 </p>
+                    <p class=" number font-bold text-xl"> 1994-999999 </p>
                     <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Health </button>
                   </div>
                   <div class=" flex">
-                    <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                    <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                    <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                    <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                   </div>
                </div>
             
@@ -134,15 +133,15 @@
                      <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                      <i class="heart-btn far fa-heart cursor-pointer"></i>
                   </div>
-                     <h4 class="font-bold text-lg"> Women & Child Helpline </h4>
+                     <h4 class=" name font-bold text-lg"> Women & Child Helpline </h4>
                      <p class="text-sm"> Women & child Helpline </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 109 </p>                                              
+                     <p class=" number font-bold text-xl"> 109 </p>                                              
                      <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Help </button>
                   </div>
                   <div class=" flex">
-                     <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                     <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                     <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                     <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                   </div>
                </div>
                <div class="bg-white p-4 shadow-lg rounded-lg">
@@ -150,15 +149,15 @@
                      <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                      <i class=" heart-btn far fa-heart cursor-pointer"></i>
                   </div>
-                   <h4 class="font-bold text-lg"> Anti-Corruption Helpline </h4>
+                   <h4 class="name font-bold text-lg"> Anti-Corruption Helpline </h4>
                    <p class="text-sm"> Anti-Corruption </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 106 </p>
+                     <p class="number font-bold text-xl"> 106 </p>
                      <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Govt. </button>
                   </div>
                   <div class=" flex">
-                    <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                    <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                    <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                    <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                 </div>
                </div>
                <div class="bg-white p-4 shadow-lg rounded-lg">
@@ -166,15 +165,15 @@
                       <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                      <i class=" heart-btn far fa-heart cursor-pointer"></i>
                   </div>
-                  <h4 class="font-bold text-lg"> Electricity Helpline </h4>
+                  <h4 class="name font-bold text-lg"> Electricity Helpline </h4>
                   <p class="text-sm"> Electricity Outage </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 16216 </p>
+                     <p class="number font-bold text-xl"> 16216 </p>
                      <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Electricity </button>
                  </div>
                  <div class=" flex">
-                     <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%] "> <i class="far fa-copy"></i> Copy </button>
-                     <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                     <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%] "> <i class="far fa-copy"></i> Copy </button>
+                     <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                  </div>
                </div>
                <div class="bg-white p-4 shadow-lg rounded-lg">
@@ -182,15 +181,15 @@
                      <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                      <i class=" heart-btn far fa-heart cursor-pointer"></i>
                   </div>
-                  <h4 class="font-bold text-lg"> Brac Helpline </h4>
+                  <h4 class="name font-bold text-lg"> Brac Helpline </h4>
                   <p class="text-sm"> Brac </p>
                   <div class="mt-4">
-                     <p class="font-bold text-xl"> 16445 </p>
+                     <p class="number font-bold text-xl"> 16445 </p>
                      <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> NGO </button>
                   </div>
                   <div class=" flex">
-                     <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%] "> <i class="far fa-copy"></i> Copy </button>
-                     <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                     <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%] "> <i class="far fa-copy"></i> Copy </button>
+                     <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                   </div>
                 </div>
                 <div class="bg-white p-4 shadow-lg rounded-lg">
@@ -198,35 +197,37 @@
                         <img class="w-[45px] p-3 bg-[#FFE3E2] rounded-xl mb-3" src="assets/emergency.png" alt="">
                         <i class=" heart-btn far fa-heart cursor-pointer"></i>
                     </div>
-                       <h4 class="font-bold text-lg"> Bangladesh Railway Helpline </h4>
+                       <h4 class="name font-bold text-lg"> Bangladesh Railway Helpline </h4>
                        <p class="text-sm"> Bangladesh Railway </p>
                     <div class="mt-4">
-                       <p class="font-bold text-xl"> 163 </p>
+                       <p class="number font-bold text-xl"> 163 </p>
                        <button class="py-1 px-3 mb-5 bg-gray-100 rounded-2xl"> Travel </button>
                     </div>
                     <div class=" flex">
-                        <button  class="btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
-                        <button class=" bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
+                        <button  class="copy-btn btn hover:bg-black hover:text-white cursor-pointer text-gray-300  w-[50%]"> <i class="far fa-copy"></i> Copy </button>
+                        <button class="call-button bg-[#00A63E] hover:bg-gray-300 cursor-pointer text-white rounded-lg ml-2 w-[50%]"> <i class="fas fa-phone"></i> Call </button>
                     </div>
                 </div>
              </div>
 
             </div>
-
-            <div class=" col-span-1 md:col-span-3 sm:row-span-3 shadow-lg rounded-lg h-a bg-white">
+               <!-- call history here  -->
+            <div  class=" col-span-1 md:col-span-3 sm:row-span-3 shadow-lg rounded-lg h-a bg-white">
                 <div class="flex justify-between items-center p-4">
                     <div class="flex items-center ">
                         <i class="far fa-clock text-gray-400"></i>
                         <p class="ml-1 font-medium"> Call History </p>
                     </div>
-                    <button class="bg-[#00A63E] hover:bg-gray-300 cursor-pointer rounded-3xl py-2 px-2 sm:px-6 ml-3  text-white"> Clear </button>
+                    <button id="clear-button" class="bg-[#00A63E] hover:bg-gray-300 cursor-pointer rounded-3xl py-2 px-2 sm:px-6 ml-3  text-white"> Clear </button>  
+                </div>
+                <div id="history-div">
+
                 </div>
             </div>
-        
+               
         </section>
     </main>
     
-
     <script src="js/script.js"></script>
 </body>
 </html>
